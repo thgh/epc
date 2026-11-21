@@ -1,0 +1,12 @@
+services:
+  epc:
+    build: .
+    ports:
+      - '26130:80'
+    environment:
+      NODE_ENV: production
+      PORT: '80'
+      # Optional: official VEKA rekenmotor (request access via veka@vlaanderen.be)
+      # VEKA_EPC_API_URL: https://energie-dev-secure.api.vlaanderen.be
+      # VEKA_EPC_CLIENT_CERT: /certs/client.crt
+      # VEKA_EPC_CLIENT_KEY: /certs/client.key

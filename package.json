@@ -1,0 +1,24 @@
+{
+  "name": "epc",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "bun --watch server/server.ts",
+    "start": "NODE_ENV=production bun server/server.ts",
+    "test": "bun test",
+    "typecheck": "tsc --noEmit",
+    "fix": "bun fmt"
+  },
+  "dependencies": {
+    "bun-plugin-tailwind": "^0.1.2",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "tailwindcss": "^4.1.17"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.3.3",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "typescript": "^5.9.3"
+  }
+}
